@@ -11,4 +11,10 @@ public class TaskDto {
     private Long id;
     private String title;
     private String content;
+
+    @Override
+    public boolean equals(Object o) {
+        TaskDto taskDto = (TaskDto) o;
+        return taskDto.id == this.id && taskDto.title == this.title && taskDto.content == this.content;
+    }
 }

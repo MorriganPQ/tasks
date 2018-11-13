@@ -22,4 +22,10 @@ public class Task {
 
     @Column(name = "description")
     private String content;
+
+    @Override
+    public boolean equals(Object o) {
+        Task task = (Task) o;
+        return task.id == this.id && task.title == this.title && task.content == this.content;
+    }
 }
