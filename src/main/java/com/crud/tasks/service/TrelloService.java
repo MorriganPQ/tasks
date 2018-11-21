@@ -13,7 +13,7 @@ import java.util.Optional;
 
 @Service
 public class TrelloService {
-    private static final String SUBJECT = "Tasks: New Trello card";
+    public static final String SUBJECT = "Tasks: New Trello card";
 
     @Autowired
     private AdminConfig adminConfig;
